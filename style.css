@@ -187,18 +187,36 @@ footer {
     }
 
     .menu nav {
-        display: flex;
         background: rgba(211, 211, 211, 0.918);
+        opacity: 0%;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        align-content: center;
 
-        position:absolute;
+        position:fixed;
         right: 0px;    
         bottom: 0px;
+        padding: 0;
+        z-index: -1;
 
         width: 100vw;
         height: 100vh;
+    }
+    .menu nav a {
+        display: block;
+        padding: 20px;
+        margin: auto;
+    }
+    .menu nav a:hover {
+        background-color: white;
+    }
+}
+
+@media(max-width: 419px){
+    h1 {
+        font-size: x-large;
+    }
+    h2 {
+        font-size: large;
     }
 }
