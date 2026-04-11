@@ -22,10 +22,13 @@ body {
 
     flex-direction: column;
 
+    transition: background-color 0.5s, color 0.5s;
 }
 
 a {
     color: var(--cor-fonte);
+    
+    transition: color 0.5s;
 }
 
 header {
@@ -197,8 +200,7 @@ footer {
     margin: 5px;
     gap: 5px;
 
-    justify-content: center;
-    align-items: end;
+    justify-content: space-around;
 
     flex: 0;
 }
@@ -206,10 +208,6 @@ footer {
 @media (max-width: 768px) {
     main {
         flex-direction: column;
-    }
-
-    footer {
-        flex: 0;
     }
 }
 
