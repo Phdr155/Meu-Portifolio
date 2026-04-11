@@ -1,3 +1,9 @@
+:root {
+    --cor-fundo: #fff;
+    --cor-fundoMenu: #d3d3d3ea; 
+    --cor-fonte: black;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +12,9 @@
 body {
     display: flex;
 
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     width: 100vw;
@@ -13,6 +22,10 @@ body {
 
     flex-direction: column;
 
+}
+
+a {
+    color: var(--cor-fonte);
 }
 
 header {
@@ -25,7 +38,8 @@ header {
 
     flex: 2;
 }
-header button{
+
+header button {
     z-index: -1;
     opacity: 0%;
 
@@ -39,16 +53,30 @@ header button{
 
     flex: 1;
 }
+
 .menu nav {
     border: 1px solid;
     padding: 0px 10px;
 
     height: 25px;
 }
+
 .menu nav a {
     font-weight: 600;
 
     margin: 0px 5px;
+}
+
+.menu #darkMode label {
+    font-size: large;
+}
+
+#light {
+    margin: 0;
+    padding: 0;
+
+    width: 15px;
+    height: 15px;
 }
 
 .titulo {
@@ -78,14 +106,16 @@ main {
 
     flex: 1;
 }
+
 .projetos h3 {
     display: flex;
-    
+
     justify-content: center;
     align-items: center;
 
     flex: 1;
 }
+
 .projetos ul {
     display: flex;
 
@@ -104,6 +134,7 @@ main {
 
     flex: 1;
 }
+
 .experiencias h3 {
     display: flex;
 
@@ -112,6 +143,7 @@ main {
 
     flex: 1;
 }
+
 .exp-link {
     display: flex;
 
@@ -120,6 +152,7 @@ main {
 
     flex: 3;
 }
+
 .exp-link a {
     flex: 1;
 }
@@ -133,6 +166,7 @@ main {
 
     flex: 1;
 }
+
 .cursos h3 {
     display: flex;
 
@@ -141,6 +175,7 @@ main {
 
     flex: 1;
 }
+
 .cursos ul {
     display: flex;
 
@@ -148,6 +183,7 @@ main {
 
     flex: 3;
 }
+
 li {
     list-style-type: none;
 
@@ -171,6 +207,7 @@ footer {
     main {
         flex-direction: column;
     }
+
     footer {
         flex: 0;
     }
@@ -181,20 +218,20 @@ footer {
         opacity: 100%;
 
         z-index: 1;
-        
+
         width: 50px;
         height: 50px;
     }
 
     .menu nav {
-        background: rgba(211, 211, 211, 0.918);
+        background: var(--cor-fundoMenu);
         opacity: 0%;
 
         text-align: center;
         align-content: center;
 
-        position:fixed;
-        right: 0px;    
+        position: fixed;
+        right: 0px;
         bottom: 0px;
         padding: 0;
         z-index: -1;
@@ -202,20 +239,23 @@ footer {
         width: 100vw;
         height: 100vh;
     }
+
     .menu nav a {
         display: block;
         padding: 20px;
         margin: auto;
     }
+
     .menu nav a:hover {
-        background-color: white;
+        background-color: var(--cor-fundo);
     }
 }
 
-@media(max-width: 419px){
+@media(max-width: 419px) {
     h1 {
         font-size: x-large;
     }
+
     h2 {
         font-size: large;
     }
